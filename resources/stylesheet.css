@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 .header-container {
@@ -30,43 +31,111 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
-   
+    font-size: 1em;
 }
 
 .navbar nav a {
     margin-right: 16px;
 }
 
+/* Section 1 */
+
 .main1-container{
     background-color: #dce0dc;
     display:flex;
     align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: relative;
     
 }
 
-.main1-container img{
+.main1-left, .main1-right{
+    width: 50%;
     
-    margin: 32px 16px 32px 24px;
-    width: 60%;
+}
+
+.main1-right{
+    display: inline-block;
+    
+}
+
+.main1-left img{
+    display:block;
+    margin: 32px 24px 32px 24px;
+    width: 100%;
     height: auto;
+
+}
+
+.main1-right{
+    
+    top: 0; /* Align to the top of the container */
+    right: 0; /* Align to the right of the container */
+    display: flex; /* Use flexbox to align content */
+    justify-content: center; /* Center items vertically */
+    
+    
 }
 
 .main1-text{
-    width:27%;
-    margin-left: 24px;
-    padding: 0;
+    width:70%;
+    font-size: 30px;
+    padding-bottom: 40px;
+    
     
 }
 
 .main1-button{
-    
-    justify-content:space-around;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    background-color: darkgrey;
+    background-color: #5e5d59;
     display: block;
-    width: 91%;
+    width: 83%;
+    height: 50px;
     text-align: center;
+    padding-top: 18px;
+    
+}
+
+.button-text{
+    color: white;
+    
+}
+
+/* Section 2 */
+
+.main2-left, .main2-right{
+    width: 50%;
+}
+
+.main2-container{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.main2-left{
 
 }
+
+.main2-left img{
+    width: 100%;
+    margin: 32px 16px 32px 24px;
+    
+    
+}
+
+.main2-text{
+    margin-left: 24px;
+}
+
+.main2-left h1{
+    margin-bottom: 24px;
+}
+
+.main2-left h4{
+    margin-bottom: 32px;
+    margin-top: 12px;
+}
+
 
