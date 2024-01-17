@@ -156,9 +156,12 @@ width: 60%;
 .card{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     padding: 16px;
     box-sizing: border-box;
     margin-left: 40px;
+    flex-direction: row;
+    max-width: auto;
     
     
 }
@@ -167,6 +170,10 @@ width: 60%;
     width: auto;
     height: auto;
     margin: 16px;
+}
+
+.card-text{
+    margin-left: 16px;
 }
 
 #card3{
