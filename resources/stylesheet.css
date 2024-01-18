@@ -3,6 +3,10 @@ body{
     font-size: 16px;
 }
 
+p {
+    font-size: 1.25;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -57,6 +61,7 @@ body{
 
 .main1-right{
     width: 40%
+    
 }
 
 .main1-right{
@@ -111,7 +116,7 @@ body{
     display:flex;
     align-content: flex-start;
     width: 100%;
-    margin-top: 32px;;
+    margin-top: 32px;
 }
 
 .main2-left{
@@ -146,7 +151,7 @@ width: 60%;
 
 .main2-right{
     width:40%;
-
+    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -180,5 +185,164 @@ width: 60%;
     background-color: lightgray;
 }
 
+/* Section 3 */
 
+.main3-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Use minmax for flexible sizing with a minimum of 0 and a maximum that fills the space */
+    grid-gap: 16px; /* Reduce the spacing between the grid items */
+    max-width: 100%; /* Adjust if necessary, or use a specific max-width to contain the grid */
+    margin: 72px auto; /* Center the container */
+    padding: 72px;
+    background-color: lightgrey;
+    
+}
+
+.category {
+    display: flex;
+    flex-direction: column; /* Stack the children vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: white;
+    padding: 16px; /* Add padding inside the category box */
+    
+}
+
+.category img {
+    width: 100%; /* This will now be 100% of the adjusted .category width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 16px; /* Space below the image */
+}
+
+/* Adjustments to h2 and p if necessary */
+.category h2 {
+    margin: 8px 0; /* Space above and below the heading */
+    text-align: center; /* Center align the heading */
+}
+
+.category p {
+    text-align: center; /* Center the text */
+    margin: 8px 0; /* Space above and below the paragraph */
+    
+}
+
+  .header {
+    grid-column: 1 / -1; /* The header spans all columns */
+    text-align: center; /* Center the header text */
+    font-size: 28px;
+  }
+
+/* Section 4 */
+
+.main4-container {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    align-items:center; /* Center children horizontally */
+    width: 100%;
+     /* Adjust the max-width as per your design requirements */
+    margin: auto; /* This will center the container if it's smaller than the viewport width */
+}
+
+.main4-header {
+    font-size: 32px;
+    margin: 16px 0; /* Adjust top and bottom margin as needed */
+    text-align: center;
+    width: 100%;
+}
+
+.main4-content {
+    display: flex;
+    width: 100%; /* Take full width of the parent container */
+    align-items: flex-start;
+}
+
+.main4-left {
+    flex: 0 0 60%; /* Do not grow, do not shrink, start at 60% of the parent container */
+    padding-right: 24px; /* Right padding as per your design */
+    align-items: flex-start;
+}
+
+.main4-box video {
+    width: 100%; /* Adjusted: make video responsive */
+    height: auto;
+  }
+
+.main4-right {
+    flex: 0 0 40%; /* Do not grow, do not shrink, start at 40% of the parent container */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the start of the flex container */
+    justify-content: center;
+    max-width: 40%; /* Limit the width to 40% */
+}
+
+.main4-box {
+    margin-bottom: 24px;
+    padding: 16px;
+    width: 100%; /* Full width of the parent container */
+    box-sizing: border-box; /* Include padding and border in the box's width */
+    
+}
+
+
+
+.main4-box h2, .main4-box p {
+    margin-left: 16px; /* Add space between the image and the text */
+}
+
+.thesis-image {
+    width: 35%; /* Adjust the width of the images */
+    height: auto;
+    display: block; /* Remove extra space below images */
+    margin-bottom: 16px; /* Space below image */
+}
+
+#top-box{
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+#bottom-box{
+    
+    display: flex;
+    align-items: center;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    padding: 24px 16px; /* Adjust the padding as needed */
+    box-sizing: border-box;
+    background-color: #f8f8f8; /* Adjust the background color as needed */
+    font-family: Arial, sans-serif; /* Use the font family as per your design */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%; /* Adjust the max-width as needed */
+    margin: 0 24px; /* This centers the footer content */
+  }
+  
+  .footer p {
+    margin: 0; /* Removes default margin from the paragraph */
+    color: #333; /* Adjust text color as needed */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #333; /* Adjust link color as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    margin-left: 16px; /* Space between links */
+  }
+  
+  /* Optional: Add hover effect to links */
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+  
 
