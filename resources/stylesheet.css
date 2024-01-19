@@ -7,6 +7,8 @@ p {
     font-size: 1.25;
 }
 
+/*Header*/
+
 .header-container {
     display: flex;
     align-items: center;
@@ -346,3 +348,8 @@ width: 60%;
 
   
 
+  @media (max-width: 480px) {
+    body {
+      
+    }
+  }
